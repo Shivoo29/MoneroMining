@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_black"
+    tools:context=".profileActivity">
+
+    <LinearLayout
+        android:id="@+id/pBackBtn"
+        android:clickable="true"
+        android:allowClickWhenDisabled="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/ib_backBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="16dp"
+            android:background="@drawable/back_btn_bg"
+            android:src="@drawable/back_arrow" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pBackBtn"
+        android:gravity="center_vertical"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/image_box"
+            android:background="@drawable/profile_bg"
+            android:elevation="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="center"
+            >
+            <TextView
+                android:id="@+id/pName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full Name"
+                android:layout_margin="5dp"
+                android:textColor="@color/my_white"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 123-456-7890"
+                android:layout_margin="5dp"
+                android:textColor="@color/gray"
+                android:textSize="16sp"
+                android:drawableStart="@drawable/wallet_icon"
+                android:drawableTint="@color/gray"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/personalAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llProfile"
+        android:text="Payout Accounts"
+        android:textColor="@color/my_white"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="33dp"/>
+
+    <LinearLayout
+        android:id="@+id/personalWallet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="33dp"
+        android:layout_below="@+id/personalAccount"
+        >
+        <TextView
+            android:id="@+id/tv_pWallet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Persnol Wallet"
+            android:drawableLeft="@drawable/wallet_icon"
+            android:drawableTint="@color/light_blue"
+            android:drawablePadding="10dp"
+            android:textColor="@color/my_white"
+            android:textSize="18sp"
+            android:paddingVertical="20dp"
+            android:paddingHorizontal="16dp"
+            android:background="@drawable/tabs_bg"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/logoutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/personalWallet"
+        android:layout_margin="33dp"
+        android:text="LOGOUT"
+        android:textStyle="bold"
+        android:textColor="@color/my_white"
+        android:elevation="7dp"
+        android:background="@drawable/button_bg"
+        android:backgroundTint="@color/light_blue" />
+
+</RelativeLayout>

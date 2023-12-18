@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1042478398879",
+    "project_id": "loginformma",
+    "storage_bucket": "loginformma.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1042478398879:android:667ad2d8fc6e792db3d1aa",
+        "android_client_info": {
+          "package_name": "com.ivar7284.monerominingapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP1eJs_DHLhezoCkfOj-BAgetBggN1m3I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

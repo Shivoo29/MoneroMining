@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_black"
+    tools:context=".walletScreen">
+
+    <LinearLayout
+        android:id="@+id/walletBalance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="20dp"
+        >
+        <TextView
+            android:id="@+id/tv_walletBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wallet Balance: 0.00"
+            android:textColor="@color/my_white"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_margin="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/personalWallet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="33dp"
+        android:background="@drawable/tabs_bg"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/walletBalance"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/wallet_icon"
+            android:tint="@color/light_blue"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="20dp"
+            tools:ignore="UseAppTint" />
+        <TextView
+            android:id="@+id/tv_pWallet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Persnol Wallet"
+            android:layout_weight="1"
+            android:textColor="@color/my_white"
+            android:textSize="18sp"
+            android:paddingVertical="20dp"
+            android:paddingHorizontal="16dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+20 XMR"
+            android:textColor="@color/my_white"
+            android:textSize="16sp"
+            android:layout_marginEnd="15dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/personalWallet1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="33dp"
+        android:background="@drawable/tabs_bg"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/personalWallet"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/wallet_icon"
+            android:tint="@color/light_blue"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="20dp"
+            tools:ignore="UseAppTint" />
+        <TextView
+            android:id="@+id/tv_pWallet1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Persnol Wallet"
+            android:layout_weight="1"
+            android:textColor="@color/my_white"
+            android:textSize="18sp"
+            android:paddingVertical="20dp"
+            android:paddingHorizontal="16dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+20 XMR"
+            android:textColor="@color/my_white"
+            android:textSize="16sp"
+            android:layout_marginEnd="15dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/personalWallet2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="33dp"
+        android:background="@drawable/tabs_bg"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/personalWallet1"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/wallet_icon"
+            android:tint="@color/light_blue"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="20dp"
+            tools:ignore="UseAppTint" />
+        <TextView
+            android:id="@+id/tv_pWallet2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Persnol Wallet"
+            android:layout_weight="1"
+            android:textColor="@color/my_white"
+            android:textSize="18sp"
+            android:paddingVertical="20dp"
+            android:paddingHorizontal="16dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+20 XMR"
+            android:textColor="@color/my_white"
+            android:textSize="16sp"
+            android:layout_marginEnd="15dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/personalWallet3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="33dp"
+        android:background="@drawable/tabs_bg"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/personalWallet2"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/wallet_icon"
+            android:tint="@color/light_blue"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="20dp"
+            tools:ignore="UseAppTint" />
+        <TextView
+            android:id="@+id/tv_pWallet3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Persnol Wallet"
+            android:layout_weight="1"
+            android:textColor="@color/my_white"
+            android:textSize="18sp"
+            android:paddingVertical="20dp"
+            android:paddingHorizontal="16dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+20 XMR"
+            android:textColor="@color/my_white"
+            android:textSize="16sp"
+            android:layout_marginEnd="15dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/personalWallet4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="33dp"
+        android:background="@drawable/tabs_bg"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/personalWallet3"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/wallet_icon"
+            android:tint="@color/light_blue"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="20dp"
+            tools:ignore="UseAppTint" />
+        <TextView
+            android:id="@+id/tv_pWallet4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Persnol Wallet"
+            android:layout_weight="1"
+            android:textColor="@color/my_white"
+            android:textSize="18sp"
+            android:paddingVertical="20dp"
+            android:paddingHorizontal="16dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+20 XMR"
+            android:textColor="@color/my_white"
+            android:textSize="16sp"
+            android:layout_marginEnd="15dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/moreTransactionsBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="33dp"
+        android:layout_marginVertical="30dp"
+        android:background="@drawable/button_bg"
+        android:text="See More Transactions"
+        android:textSize="16sp"
+        android:elevation="7dp"
+        android:layout_below="@+id/personalWallet4"/>
+
+    <LinearLayout
+        android:id="@+id/bottomDrawer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:elevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_blue">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:id="@+id/homeBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@drawable/home_icon"
+                        android:drawableTint="@color/gray"
+                        android:text="HOME"
+                        android:textColor="@color/gray"
+                        android:elevation="2dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/payoutBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@drawable/wallet_icon"
+                        android:drawableTint="@color/gray"
+                        android:text="PAYOUT"
+                        android:textColor="@color/gray"
+                        android:elevation="2dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/profileBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@drawable/profile_icon"
+                        android:drawableTint="@color/gray"
+                        android:text="PROFILE"
+                        android:textColor="@color/gray"
+                        android:elevation="2dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
